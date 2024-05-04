@@ -21,7 +21,7 @@ For more detail about how SRCNN works, you can check out my blog post series on 
    ```bash
    pip install -r requirements.txt
    ```
-3. Download train.h5 and test.h5 by running the matlab scripts generate_train and generate_test from [here](https://mmlab.ie.cuhk.edu.hk/projects/SRCNN/SRCNN_train.zip) 
+3. Download train.h5 and test.h5 by running the matlab scripts generate_train and generate_test from [here](https://mmlab.ie.cuhk.edu.hk/projects/SRCNN/SRCNN_train.zip) and put those files in the root directory of the repository
 3. Open and run `train_srcnn.ipynb` in Jupyter Notebook to train the SRCNN model.
 4. After training, use the trained model to perform image super-resolution on new images.
 
