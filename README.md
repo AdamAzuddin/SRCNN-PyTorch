@@ -6,8 +6,9 @@ For more detail about how SRCNN works, you can check out my blog post series on 
 
 ## Contents
 
-- `srcnn_model.py`: Python script defining the architecture of the SRCNN model.
-- `train_srcnn.ipynb`: Jupyter notebook containing code for training and evaluating the SRCNN model.
+- `data/`: Contains the images used for training and testing
+- `results/`: Contains the result of test images when inferenced with the model
+- `srcnn_train.ipynb`: Jupyter notebook containing code for training and evaluating the SRCNN model.
 - `requirements.txt`: File listing the required Python packages for running the code.
 
 ## Usage
