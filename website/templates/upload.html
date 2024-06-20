@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Super-Resolution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image for Super-Resolution</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <input type="submit" value="Upload">
+        </form>
+        {% if output_image %}
+            <div class="result">
+                <h2>Original Image</h2>
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename=input_image) }}" alt="Original Image" class="image-preview">
+                </div>
+                <h2>Super-Resolved Image</h2>
+                <div class="image-container">
+                    <img src="{{ url_for('static', filename='output_image.png') }}" alt="Super-Resolved Image" class="image-preview">
+                </div>
+                <a href="{{ url_for('static', filename='output_image.png') }}" download="super_resolved_image.png" class="download-btn">Download Image</a>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
